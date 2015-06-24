@@ -6,3 +6,6 @@ libraries:
 - name: jinja2
   version: latest
 ******************
+
+2.in class FizzBuzz, when use the function of post: self.request.get('n'),get "undefined n" error. The right
+method is called in get function.
