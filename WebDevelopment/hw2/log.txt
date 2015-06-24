@@ -1,0 +1,8 @@
+1.when add jinja2 module in google app engine, must change app.yaml and add this:
+*****************
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: latest
+******************
