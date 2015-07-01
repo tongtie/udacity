@@ -1,0 +1,4 @@
+1.add url of file "static" in app.yaml
+2.pay attention to "db.Key" and url jump
+problem:
+press the title jump the relevant page
