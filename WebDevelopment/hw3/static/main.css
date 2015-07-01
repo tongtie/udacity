@@ -1,0 +1,56 @@
+a{
+	text-decoration:none;
+}
+
+.main-title{
+	text-align: center;
+	color: #222;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.newpost-main .newpost-title input{
+	width: 500px;
+	font-size: 20px;
+	padding: 2px;
+
+}
+
+.newpost-main .newpost-arc textarea{
+	width: 500px;
+	height: 500px;
+	font-size: 17px;
+}
+
+.newpost-main{
+	margin-bottom:10px;
+}
+
+.newpost-main label{
+	font-weight: bold;	
+}
+
+.newpost-error{
+	color: red;
+}
+
+.post-title{
+	position: relative;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 2px solid black;
+}
+.post-created{
+	text-align: right;
+}
+
+
+.post-arc{
+	font-size: 15px;
+	
+}
+body{
+	width: 800px;
+	margin: 0 auto;
+}

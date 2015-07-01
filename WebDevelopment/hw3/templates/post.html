@@ -1,0 +1,12 @@
+<p class="post-title">
+{{p.title}}
+</p>
+<br>
+<p class="post-created">
+{{p.created.strftime("%c")}}
+<br>
+</p>
+<p class="post-arc">
+{{p._render_text | safe }}
+<br>
+</p>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="fp-main">
+	<button class="post-button"><a href="/blog/newpost">Write Blog</a></button>
+	<br>
+	{%for a in arts%}
+	<p>{{ a.render() | safe}}
+	{% endfor %}
+</div>
+{% endblock %}
