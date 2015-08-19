@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method='POST'>
+  <textarea name = 'text_content'>
+	{% if page %}
+	    {{ page.content }}
+	    {{ page.ID}}
+	{% endif %}
+  </textarea>
+  <input type='submit'>
+</form>
+{% endblock %}

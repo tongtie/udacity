@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+  <table>
+  {% for p in posts %}
+  <tr>
+	  <td>
+		  {{ p.modified.strftime("%c") }}
+
+	  </td>
+	  <td>
+		  {{ p.author.name }}
+	  </td>
+	  <td>
+		  {{ p.content[: 50] }}
+	  </td>
+	  <td>
+		  <a href = "{{ path }}?v={{p.key().id()}}">view</a>
+	  </td>
+	  <td>
+		  <a href = "/_edit{{path}}?v={{p.key().id()}}">edit</a>
+	  </td>
+  </tr>
+  {% endfor %}
+  </table>
+{% endblock %}

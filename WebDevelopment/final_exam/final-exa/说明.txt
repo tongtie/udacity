@@ -1,0 +1,9 @@
+缺陷：
+1，没有css
+2,缺少edit和history导航
+已完成：
+1，可以注册，登录wiki
+2，可以编辑wiki
+3，可以查看历史wiki
+环境：
+google app engine 1.9.22

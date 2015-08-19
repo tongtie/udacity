@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div>
+	    {% if not user %}
+		    <div>
+			    <a href='/login'>Login</a>
+			    <a href='/signup'>Signup</a>
+		    </div>
+	    {% else %}
+		    <div>
+			    {{ user.name }}
+			    <a href='/logout'>Logout</a>
+		    </div>
+	    {% endif %}
+    </div>
+    {%block content%}
+    {%endblock%}
+  </body>
+</html>
+
+

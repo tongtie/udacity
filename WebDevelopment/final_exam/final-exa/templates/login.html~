@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+  <form method='POST'>
+	  <table>
+		  <tr>
+			  <td>UserName:</td>
+			  <td><input name='uname'></td>
+		  </tr>
+		  <tr>
+			  <td>PassWord</td>
+			  <td><input name='pw'></td>
+		  </tr>
+	  </table>
+	  <p>{{ perror }}</p>
+	  <textarea name = 'ref_url' hidden>{{ref_url}}</textarea>
+	  <input type='submit'>
+  </form>
+{% endblock %}

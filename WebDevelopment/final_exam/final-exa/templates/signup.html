@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+{% block content %}
+<form method='POST'>
+	<table>
+		<tr>
+			<td>UserName:</td>
+			<td><input name='uname' value={{vname}}></td>
+			<td>{{uerror}}</td>
+		</tr>
+		<tr>
+			<td>PassWord:</td>
+			<td><input type='password' name='upw'></td>
+			<td>{{perror}}</td>
+		</tr>
+		<tr>
+			<td>Confirm:</td>
+			<td><input type='password' name='cpw'></td>
+			<td>{{cperror}}</td>
+		</tr>
+	</table>
+	<input type='submit'>
+</form>
+<div hidden>{{referer}}</div>
+{% endblock %}
